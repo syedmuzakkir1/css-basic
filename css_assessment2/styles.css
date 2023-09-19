@@ -1,0 +1,116 @@
+
+*{
+
+
+    /* color: #022453;
+    background-color: beige;
+    font-size: 25px; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+h1{
+
+    color: green;
+}
+#division{
+
+    background-color: rgb(251, 54, 0);
+    padding: 20px;
+}
+.div1{
+    background-color: blue !important;
+    
+}
+.div2{
+    background-color: blue;
+}
+
+  h2{
+    color: red;
+  }
+
+  /* Specificity */
+ 
+  /* specificity (1,0,0) */
+  /* Higher specificity (100) */
+  #Two{
+    color: greenyellow;
+    background-color: black;
+  }
+  /* specificity (0,1,0) */
+  /* Medium Specificity (10) */
+  .One{
+    color: cyan;
+  }
+
+   /* specificity (0,0,1) */
+   /* Least specificity (1) */
+  h3{
+    color: brown;
+  }
+
+ /* !!!!!!!!!!!!!!!!!!! Important */
+
+  /* Inline element style will Override the all styling (*,#,.,tag) */
+
+
+
+ 
+  p::third-line{
+    background-color: black;
+  }
+
+  /* !!!!!IMPORTANT!!!!!!!
+  ======================= */
+  /* first !important
+  second inline
+  third  id 
+  fourth * universal 
+  fifth  class (.)
+  sixth  elemnets (tags) */
+
+  h1:hover{
+    background-color: bisque;
+    cursor: pointer;
+  }
+
+  h1::before{
+    content: "";
+    background-color: rgb(255, 138, 127);
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+  }
+
+  h1::after{
+    content: "";
+    background-color: darkgreen;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+  }
+
+  /* p:nth-child(3){
+    background-color: black;
+    color: white;
+  } */
+  p::first-line{
+    background-color: red;
+  }
+
+  p::first-line(3){
+    background-color: aqua;
+  }
+  p:nth-of-type(odd){
+    background-color: aqua;
+  }
+  
+  p::first-line:nth-of-type(3){
+    background-color: black;
+  }
+  p::first-line:nth-child(3n){
+    background-color: black;
+  }
+  p::selection(3){
+    background-color: yellow
+  }
