@@ -8,6 +8,12 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
 
+body{
+  background: url(../css_assessment2/images/car.avif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 h1{
 
     color: green;
@@ -73,13 +79,14 @@ h1{
     background-color: bisque;
     cursor: pointer;
   }
-
+ 
   h1::before{
     content: "";
     background-color: rgb(255, 138, 127);
     width: 200px;
     height: 200px;
     padding: 20px;
+   
   }
 
   h1::after{
@@ -113,4 +120,34 @@ h1{
   }
   p::selection(3){
     background-color: yellow
+  }
+
+
+  /* Decendent selector  */
+div h3{
+ 
+   
+   color: black;
+}
+
+.parent >div {
+  background-color: yellow
+}
+
+.parent~h3{
+  background-color: blue;
+}
+/* a:link {
+  color: #FF0000;
+}
+
+a:visited {
+    color: #00FF00;
+  }
+  a:active {
+    color: #0000FF;
+  } */
+ 
+  a:target{
+    color: red;
   }
