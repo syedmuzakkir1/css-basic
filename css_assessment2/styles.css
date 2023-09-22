@@ -9,7 +9,8 @@
   }
 
 body{
-  background: url(../css_assessment2/images/car.avif);
+  /* background: url(../css_assessment2/images/car.avif); */
+  background-image: url(../css_assessment2/images/background.avif);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -151,3 +152,18 @@ a:visited {
   a:target{
     color: red;
   }
+  a{
+    color: white;
+  }
+
+
+
+
+   /* !!!!!IMPORTANT!!!!!!!
+  ======================= */
+  /* first !important
+  second inline
+  third  id 
+  fourth * universal 
+  fifth  class (.)
+  sixth  elemnets (tags) */
