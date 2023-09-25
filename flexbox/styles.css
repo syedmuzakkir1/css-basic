@@ -1,0 +1,134 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* flexbox definition */
+/* Flexbox is a one-dimensional layout system that allows you to align and distribute items along a single axis, either horizontally or vertically. You can control the size, order, and spacing of the items, as well as how they wrap and overflow. Flexbox is ideal for creating dynamic and fluid layouts that can adapt to different screen sizes and orientations. */
+header{
+    background-color: azure;
+} 
+
+img{
+    width: 100%;
+}
+.logo{
+
+    width: 250px;
+    height: 100px;
+    cursor: pointer;
+ }
+.navigation{
+
+    display: flex;
+    margin: 0 auto;
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+ul{
+    list-style: none;
+    display: flex;
+    margin: 1em;
+}
+ul a{
+    text-decoration: none;
+    padding: 1rem;
+}
+ul a:hover{
+
+    background-color: beige;
+}
+
+.input_search{
+    display: flex;
+
+    
+}
+.input_text{
+    padding: .5em;
+    border-radius: 15px;
+}
+.search_button{
+
+    margin-left: 2em;
+    padding: .7em;
+     border-radius: 10px;
+     cursor: pointer;
+     color: blue;
+     font-weight: 600;
+}
+.search_button:hover{
+    background-color: beige
+}
+
+
+/* !!!  IMPORTANT  !!!! */
+/* we use flexbox for responsive  */
+
+/* Position  : default (static)  , absolute  , relative , fixed  */
+ 
+/* to overcome the problem of position we use flexbox */
+
+
+/* When to use Flexbox?
+Flexbox is best suited for layouts that involve a single direction or dimension, such as navigation bars, menus, cards, forms, or galleries. Flexbox can handle different amounts and sizes of items, and adjust them automatically to fill the available space. Flexbox can also handle alignment and centering of items, as well as reversing and reordering them. */
+
+
+/* What is Grid?
+Grid is a two-dimensional layout system that allows you to create a grid of rows and columns, and place items into the grid cells. You can define the size, position, and alignment of the grid tracks and the items, as well as create gaps and overlaps. Grid is ideal for creating complex and structured layouts that require precise control and alignment. */
+
+/* 
+When to use Grid?
+Grid is best suited for layouts that involve two directions or dimensions, such as grids, tables, charts, or magazines. Grid can handle different numbers and ratios of rows and columns, and define them explicitly or implicitly. Grid can also handle alignment and placement of items, as well as creating areas and regions. */
+
+
+
+.Gallery{
+    display: flex;
+    /* flex wrap add the margin bottem in the row of these items  */
+    flex-wrap: wrap;
+    justify-content: center;  
+    /* align the item to the center main axis  horizontally */
+    align-items: center;
+    /* align the items in vertical direction cross axis  */
+
+    /* =============== */
+    /* flex-direction: column; */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column-reverse; */
+    /* justify-content: space-evenly; */
+
+    justify-content: space-around;
+    /* justify-content: space-between;  */
+    line-height: 1;
+    
+}
+
+
+/* we will give height and width to the container items  */
+
+img{
+    width: 100%;
+    height: 100%;
+    image-resolution: 1080px;
+}
+.Gallery1{
+
+    width: 300px;
+    height: auto;
+    flex-direction: column-reverse;
+    background-color: black;
+    padding: .1em;
+    color: white;
+    border: 2px solid blue;
+   
+}
+
+p::first-line{
+
+    background-color: rgb(231, 245, 231);
+}
+
